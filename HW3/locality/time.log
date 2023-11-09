@@ -1,0 +1,190 @@
+-----START-OF-RUN----
+Total time used for this run:12582690
+Time per pixel:3170 
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 12731788 ns
+Time per pixel: 3208 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 51247228270 ns
+Time per pixel: 1026 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 2345898401 ns
+Time per pixel: 47 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 146518 ns
+Time per pixel: 37 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 143719 ns
+File ran with: ./out3.ppm 
+Time per pixel: 36 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: ./out3.ppm 
+Total time used for this run: 108035783 ns
+Time per pixel: 27220 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: ./images/house_1.ppm 
+Map arg: -block-major 
+Total time used for this run: 85257459 ns
+Time per pixel: 5819 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: ./images/house_1.ppm 
+Map arg: -block-major 
+Total time used for this run: 1327057 ns
+Time per pixel: 91 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: ./images/house_1.ppm 
+Map arg: -block-major 
+Total time used for this run: 1311320 ns
+Time per pixel: 89 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Map arg: -block-major 
+Total time used for this run: 1312689 ns
+Time per pixel: 90 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Map arg: -block-major 
+Total time used for this run: 40204829 ns
+Time per pixel: 2744 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Map arg: -block-major 
+Total time used for this run: 40334404 ns
+Time per pixel: 2753 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Map arg: -block-major 
+Total time used for this run: 40373696 ns
+Time per pixel: 2756 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Map arg: -block-major 
+Total time used for this run: 40221184 ns
+Time per pixel: 2745 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh1.ppm 
+Total time used for this run: 40324542 ns
+Time per pixel: 2752 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+File ran with: outh2.ppm 
+Total time used for this run: 40266000 ns
+Time per pixel: 2748 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 40959829 ns
+Time per pixel: 2796 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 39257023 ns
+Time per pixel: 2679 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 1324925 ns
+Time per pixel: 90 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 41825032 ns
+Time per pixel: 2855 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 39935754 ns
+Time per pixel: 2726 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 44660244 ns
+Time per pixel: 3048 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 41511606 ns
+Time per pixel: 2833 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 40289241 ns
+Time per pixel: 2750 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 1309705 ns
+Time per pixel: 89 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 1282433 ns
+Time per pixel: 88 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 1411064 ns
+Time per pixel: 96 ns
+------END-OF-RUN-----
+
+
+
+
+for part E:
+-----START-OF-RUN----
+Total time used for this run: 5120412616 ns
+Time per pixel: 96 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 4986581674 ns
+Time per pixel: 94 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 5515414939 ns
+Time per pixel: 104 ns
+------END-OF-RUN-----
+
+
+-----START-OF-RUN----
+Total time used for this run: 7594551353 ns
+Time per pixel: 143 ns
+------END-OF-RUN-----
+
+
+
+-----START-OF-RUN----
+Total time used for this run: 5153308501 ns
+Time per pixel: 97 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 2018757939 ns
+Time per pixel: 38 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 7541404403 ns
+Time per pixel: 142 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 90327128796 ns
+Time per pixel: 1700 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 385519 ns
+Time per pixel: 97 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 351914 ns
+Time per pixel: 89 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 2121446 ns
+Time per pixel: 535 ns
+------END-OF-RUN-----
+-----START-OF-RUN----
+Total time used for this run: 2043504 ns
+Time per pixel: 515 ns
+------END-OF-RUN-----

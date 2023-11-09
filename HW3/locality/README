@@ -1,0 +1,124 @@
+/**************************************************************************
+*           1. Identify you and your programming partner by name          *
+**************************************************************************/
+Stephen Burchfield (sburch01)
+Sam Hu (hku04)
+
+/**************************************************************************
+*                            2. Acknowledgement                           *
+**************************************************************************/
+- TAs in office hours and lab
+- Piazza posts 
+- Stackoverflow for error messages 
+- Tutorialspoint for C library and function documentation
+- Spec and provided code for parts of implementation
+
+/**************************************************************************
+*         3. What has been correctly implemented and what has not         *
+**************************************************************************/
+Correctly implemented and tested: 
+- uarray2b: 
+        - Tested using a driver file 2btest.c
+- a2plain:
+        - Ran and passed a2test.c
+- ppmtrans.c: 
+        - Tested rotate, flip, and transpose on small square images
+        - Tested rotate, flip, and transpose on small rectangular images
+        - Tested rotate, flip, and transpose on mobo.ppm 
+        - General logic of test: run multiple times and diff with original
+        picture (for raw ppms) (90/270 4 times, othhers 2 times) 
+
+
+/**************************************************************************
+*                 5. Solution Architecture                                *
+**************************************************************************/
+
+- uarray2b:
+        - The larger blocks structure of a UArray2b were represented by a 
+        UArray2
+        - Each block was then represented by a single UArray whereby entire
+        blocks are stored next to each other in memory
+        - Block major mapping by calling UArray2b apply functions via UArray2
+        mapping
+
+- ppmtrans.c:
+        - Images are represented and altered through their representations as
+        UArra
+
+
+
+/**************************************************************************
+*                 6. Part E Measurements and Conclusions                  *
+**************************************************************************/
+
+Size of Image Tested: 8928 pixels by 5951 pixels
+(7440 pixels by 4959 pixels before scaling)
+
+Everything is measured in (ns)
+
+          |    row   |    col   |  block  
+--------------------------------------------
+90 (total)|4986581674|5515414939|5120412616|
+(average) |94        |104       |96        |
+--------------------------------------------
+180(total)|2018757939|7541404403|5153308501|  
+(average) |38        |142       |97        |
+--------------------------------------------
+
+
+
+As was discussed in part d, reading takes a similar amount of time when using 
+the same mapping methods, regardless of operations. This was observed in block
+major results. Furthermore, the writing part of the block major rotation 
+is consistent for both rotate 90 and 180 as there should the same amount of 
+cache hits for both rotate function. 
+
+However notably the the row major operation in a rotate 180 case takes 
+significantly shorter time than when running a row major operation on rotate 90.
+This is because the writing half of the rotate 180 function is faster than the 
+writing half of the rotate 90 function as there should be less cache misses
+during the writing process for the rotate 180 function as we are reading from 
+rows and writing to rows. The rotate 90 for row major and and the rotate 90 for
+block major have essentially the same measurements due to the similar cache
+hits for reading and writing. 
+
+The same process (of cache hits) is at work for col major in the rotate 90 and 
+180 functions but in an opposite manner, as there will be significantly more 
+misses as read (and write for 180) are accessing a row major ordered data in 
+column major order, effectively accessing different blocks of memory for every 
+insert/copy. 
+
+
+Name and Model of Computer, along with their CPU type and clock rate:
+Since we ran all our tests via the halligan server, its CPU instead of that of
+our computers' was provided below:
+        Architecture:        x86_64
+        CPU op-mode(s):      32-bit, 64-bit
+        Byte Order:          Little Endian
+        CPU(s):              6
+        On-line CPU(s) list: 0-5
+        Thread(s) per core:  1
+        Core(s) per socket:  6
+        Socket(s):           1
+        NUMA node(s):        1
+        Vendor ID:           GenuineIntel
+        CPU family:          6
+        Model:               85
+        Model name:          Intel(R) Xeon(R) Silver 4214Y CPU @ 2.20GHz
+        Stepping:            7
+        CPU MHz:             2194.844
+        BogoMIPS:            4389.68
+        Hypervisor vendor:   VMware
+        Virtualization type: full
+        L1d cache:           32K
+        L1i cache:           32K
+        L2 cache:            1024K
+        L3 cache:            16896K
+        NUMA node0 CPU(s):   0-5
+
+/**************************************************************************
+*     7. Approximately how much time did you spend on this assignment     *
+**************************************************************************/
+Around 20 hours. 
+
+
