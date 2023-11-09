@@ -1,0 +1,23 @@
+# HW1
+ HW1 Repo
+David Chen (zchen18) and Sam hu(khu04)
+
+Files:
+-restoration.c: performs the restoration from corrupted p2 to p5.
+-readaline.c: read a single line from the input file. 
+-parseline.c/parseline.h: parse a single line into a digit sequence and a 
+non_digit sequence. 
+
+References:
+We consulted numerious TAs for debugging and architecture design related 
+quesitons. 
+We also used ChatGPT and stackoverflow to understand the meanings of 
+specific error messages, mostly valgrind errors, from the compiler. 
+
+Correctness/Completion:
+Readaline and Restoration are both correctly completed and can take 
+greater than 1000 lines. We were able to restore all of the corrupted
+images given to us with no Valgrind errors. 
+
+Time Estimate: 
+30 hours.

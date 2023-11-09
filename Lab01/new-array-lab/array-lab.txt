@@ -1,0 +1,133 @@
+CS 40 Lab: Unboxed and 2D Arrays
+
+
++--------------------------------------------------------+
+|Keeper of the record:  Sam Hu (khu04)                   |
+|--------------------------------------------------------|
+| Other group member(s):                                 |
+|                                                        |
+|                  Susie List (sli37)                    |
+|                                                        |
++--------------------------------------------------------+
+
+
+PART 1: BOXED AND UNBOXED ARRAYS
+--------------------------------
+
+You are about to design the interface and implementation for a
+collection data type, i.e., an ADT like Hanson's, and you are
+considering the tradeoffs between using a boxed or an unboxed
+interface for values that users store in your collection.
+
+1A: Briefly define the terms "boxed" and "unboxed" as used for these
+    interfaces (i.e., help us be sure you know which is which!):
+
+* Boxed array:
+Boxed refers to the state for which the element is stored in the array, which 
+is by a pointer to it. The array hence did not store the raw data and address, 
+hence the idea "boxed".
+To access each element, we first deference the pointer to the first element
+Specifically, boxed array has the following characteristics:
+- each element in the array is a pointer 
+- the actual objects (pointees) are store outside of the boxed array
+- the client needs to allocate memory for every pointer (aka element)
+- pointers (elements) are unchanged (valid) even after resizing 
+
+* Unboxed array: 
+Unboxed array refers to a 
+
+
+
+1B: List two (or more) advantages of the boxed representation.
+- Each element in a boxed array (aka each pointer) can point to different,
+  which gives more flexibility in some instances, although it may also be more
+  complex for the client when dereferencing since the type would be unknown. 
+- Resizing a boxed array does not move the pointees, where as unboxed arrays 
+  may move pointees when resized. 
+- Client would be able to allocate space without knowing the object/pointee
+  type
+
+
+1C: List two (or more) advantages of an unboxed representation.
+- Data type is known beforehand, which is easier for the client when
+  dereferencing the pointee.
+- Easier deallocation, since the contents are freed when the container is.
+
+
+1D: Look at the interface to UArray (a link to an interface
+    summary is at the start of the lab instructions). Discuss the 
+    methods that show the use of the unboxed style. Why, for example, 
+    does UArray_new take both a number of elements and an element size? 
+
+- T UArray_new(int length, int size): takes both the number of elements (int)
+  and an element size (int) because unboxed array assumes fixed size for each
+  element, since every element must be of the same size for the unboxed array 
+  to be valid. 
+- void  UArray_free(T *uarray): Deallocation of an unboxed array takes only 
+  a pointer to the array itself, since we know that a feature of unboxed array 
+  is that its contents die with the container. 
+- void *UArray_at(T  uarray, int i): We can access an element by an index i, 
+  which shows the property of unboxed arrays that can be accesed by indexing 
+  instead of having to dereference a pointer as in boxed arrays. 
+
+
+
+
+
+PART 2: 2D Arrays from 1D Arrays
+--------------------------------
+
+2A. One way to construct a 2D array is to use multiple 1D
+    arrays. Describe briefly how you would do this. For example, if
+    the user asked you to create a 5x7 array of values, how many
+    one-dimensional arrays would you create? If the user asked to
+    store a value in cell [3,6] where would it go?
+
+We would multiple arrays; for example, a 5x7 array would be 5 1D arrays, each
+ containing 7 elements. To access [3,6], we would go to the fourth 1D array, 
+ 
+ and index into the 7th element (assume base-0 indexing).  
+
+
+
+2B. Another approach is to use a single one-dimensional array and to
+    put all the elements of the 2D array into that. Again, assuming
+    that you are to create a 7x5 2D array, give a mathematical formula
+    for the index in the 2D array where a value [x,y] would go in the
+    1D array.
+
+To flatten a 2D array in a 1D array, we can implement 7x5 as a 1x35 array
+ and imagine that every 5 “slots” represents a row. Following this logic 
+ we would access [x,y] by i = x * b + y, where b is the number of columns,
+  in this case 5. For example, [3,1] would be i = 3x5+1 = 16. 
+
+
+
+
+
+
+2C. (optional) is there another mapping that would work as well?
+
+
+
+
+
+
+
+
+
+
+
+
+PART 3: Designing the UArray2 Interface
+---------------------------------------
+
+3A. Describe three (or more) things you learned about the design and sem-
+antics of the UArray2 interface from reading useuarray2.c and from running 
+correct_useuarray2.
+
+- values can be accessed at an arbitrary order with the correct indexes
+
+- Size of array remains constant upon initialization
+
+- the usage of Uarray is very simple, costing only 3 int values to initialize.

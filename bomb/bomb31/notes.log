@@ -1,0 +1,39 @@
+phase1:
+
+phase2:
+        reads 6 nums, compare one by one
+phase3:
+        dunno
+phase4:
+        calculates fatorios of value of adress   
+        4012e4:	8b 7c 24 0c          	mov    0xc(%rsp),%edi
+phase1:
+phase1:
+phase1:
+
+
+(gdb) x $edi
+0x604320 <node1>:       0x00000320
+(gdb) x ($edi+16)
+0x604330 <node2>:       0x00000255
+(gdb) x ($edi+32)
+0x604340 <node3>:       0x00000152
+(gdb) x ($edi+48)
+0x604350 <node4>:       0x000003d0
+(gdb) x ($edi+64)
+0x604360 <node5>:       0x000002c5
+(gdb) x ($edi+80)
+0x604370 <node6>:       0x00000048
+(gdb) x ($edi+96)
+0x604380 <node7>:       0x000002a5
+(gdb) x ($edi+112)
+0x604390 <node8>:       0x000001a8
+(gdb) x ($edi+128)
+0x6043a0 <node9>:       0x000002b6
+
+ 0x00000320
+
+
+320
+255
+152

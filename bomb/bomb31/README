@@ -1,0 +1,42 @@
+This is bomb 31 for lab comp40fall23.
+
+It is owned by the following student(s):
+khu04
+zchen18
+
+
+
+(gdb) x 0x401de0 
+0x401de0 <array.0>:     0x00000002
+(gdb) x 0x401de4 
+0x401de4 <array.0+4>:   0x0000000a
+(gdb) x 0x401de8 
+0x401de8 <array.0+8>:   0x00000006
+(gdb) x 0x401dec 
+0x401dec <array.0+12>:  0x00000001
+(gdb) x 0x401df0 
+0x401df0 <array.0+16>:  0x0000000c
+(gdb)  x 0x401df4
+0x401df4 <array.0+20>:  0x00000010
+(gdb)  x 0x401df8
+0x401df8 <array.0+24>:  0x00000009
+(gdb)  x 0x401dfc
+0x401dfc <array.0+28>:  0x00000003
+(gdb)  x 0x401e00
+0x401e00 <array.0+32>:  0x00000004
+(gdb) x 0x401e04
+0x401e04 <array.0+36>:  0x00000007
+(gdb) x 0x401e08
+0x401e08 <array.0+40>:  0x0000000e
+(gdb) x 0x401e0c
+0x401e0c <array.0+44>:  0x00000005
+(gdb) x 0x401e10
+0x401e10 <array.0+48>:  0x0000000b
+(gdb) x 0x401e14
+0x401e14 <array.0+52>:  0x00000008
+(gdb)  x 0x401e18
+0x401e18 <array.0+56>:  0x0000000f
+(gdb) x 0x401e1c
+0x401e1c <array.0+60>:  0x0000000d
+
+2,10,6,1,12,16,9,3,4,7,14,5,11,8,15,13

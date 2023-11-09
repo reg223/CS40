@@ -1,0 +1,54 @@
+
+
+/**************************************************************************
+*           1. Identify you and your programming partner by name          *
+**************************************************************************/
+ Joshua Bernstein (jberns02)
+ Sam Hu (hku04)
+/**************************************************************************
+*                            2. Architecture                           *
+**************************************************************************/
+cvPack:
+This file is part of the implementation for compress 40.
+This file helps our overall program by 
+performing image processing operations on PPM (Portable Pixmap) images.
+It includes various functions to manipulate and transform these images. 
+The program focuses on image processing operations, particularly 
+converting between RGB and CV color spaces, trimming images, 
+and working with pixel blocks.
+
+bitword:
+contains functions used by compress40, which specifically handles
+the conversion from packed CV arrays to coded words and finally the
+compressed file format and back.
+
+compress40:
+This file is the source code of compress40, the implementation for 
+40image, designated to compress or decompress a given valid ppm down to 
+approximately a third of its original size.
+
+/**************************************************************************
+*                            3. Acknowledgement                           *
+**************************************************************************/
+Help received:
+Office hours for some debugging
+ChatGPT & Stackoverflow for identifying error messages
+
+/**************************************************************************
+*         4. What has been correctly implemented and what has not         *
+**************************************************************************/
+
+To our knowledge, after testing our program repeatedly, our program runs 
+as the spec expects it to. Our decompress and compress work according
+to the spec. And our bitpack.c methods which are used to bitpack pixels
+work according to the spec and the .h file we pulled as well. 
+Overall, our program should act according to the spec.
+
+/**************************************************************************
+*     5. Approximately how much time did you spend on this assignment     *
+**************************************************************************/
+Hours spent analyzing the problems:
+15 hours
+
+Hours spent solving the problems:
+40 hours
