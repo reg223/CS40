@@ -72,7 +72,7 @@
 
 #define methods uarray2_methods_plain
 #define map methods->map_default
-#define smap methods->small_map_col_major
+#define smap methods->small_map_row_major
 
 
 
